@@ -1,0 +1,17 @@
+.header {
+  position: relative;
+
+  display: grid;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  min-height: 100vh;
+  padding: 100px 0;
+
+  color: $color-light;
+  background-color: $color-primary;
+  background-image: url(../img/img-header.png);
+  background-position: center;
+  background-size: cover;
+}

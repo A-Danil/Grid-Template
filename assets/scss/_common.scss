@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+
+  letter-spacing: 0.1em;
+
+  color: $color-gray;
+
+  font-family: $font-main;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  font-family: $font-header;
+  font-weight: 300;
+  line-height: 1.2em;
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+
+  @include md {
+    font-size: 1.875rem;
+  }
+}
+
+h2 {
+  font-family: $font-header;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  color: $color-primary;
+
+  @include lg-min {
+    margin: 0 0 56px 0;
+    font-size: 2.5rem;
+  }
+  @include lg-md {
+    margin: 0 0 42px 0;
+    font-size: 2rem;
+  }
+  @include md-sm {
+    margin: 0 0 36px 0;
+    font-size: 1.5rem;
+  }
+  @include sm {
+    text-align: center;
+    margin: 0 0 36px 0;
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  letter-spacing: 0.05em;
+  color: $color-gray;
+  font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
+
+  color: $color-light;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1em;
+  padding-left: 1em;
+  transition: background-color 0.5s;
+  letter-spacing: 0.1em;
+}
+
+.btn--light {
+  border: 2px solid $color-light;
+  background-color: rgba($color-light, 0.1);
+
+  @include lg-min {
+    min-width: 250px;
+    height: 60px;
+    font-size: 1.125rem;
+  }
+
+  @include lg-md {
+    min-width: 200px;
+    height: 50px;
+
+    font-size: 1rem;
+  }
+
+  @include md {
+    min-width: 170px;
+    height: 40px;
+  }
+
+  @include md-sm {
+    letter-spacing: 0.05em;
+  }
+
+  @include sm {
+    letter-spacing: 0.05em;
+  }
+}
+
+.btn--primary {
+  height: 60px;
+
+  border: 2px solid $color-primary;
+  background-color: rgba($color-primary, 0.8);
+
+  font-size: 1.125rem;
+
+  @include sm {
+    width: 100%;
+  }
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: $color-accent;
+}
