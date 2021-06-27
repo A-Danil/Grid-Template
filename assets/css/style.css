@@ -809,6 +809,10 @@ a {
   gap: 20px;
 }
 
+input:focus {
+  outline: none;
+}
+
 .form-item__input {
   display: block;
   width: 100%;
