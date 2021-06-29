@@ -809,8 +809,48 @@ a {
   gap: 20px;
 }
 
-input:focus {
+input::-webkit-input-placeholder {
+  color: #637588;
+}
+
+input::-moz-placeholder {
+  color: #637588;
+}
+
+input:-ms-input-placeholder {
+  color: #637588;
+}
+
+input::-ms-input-placeholder {
+  color: #637588;
+}
+
+input::placeholder {
+  color: #637588;
+}
+
+input:focus, input:hover {
   outline: none;
+}
+
+input:focus::-webkit-input-placeholder, input:hover::-webkit-input-placeholder {
+  color: #9ba8b6;
+}
+
+input:focus::-moz-placeholder, input:hover::-moz-placeholder {
+  color: #9ba8b6;
+}
+
+input:focus:-ms-input-placeholder, input:hover:-ms-input-placeholder {
+  color: #9ba8b6;
+}
+
+input:focus::-ms-input-placeholder, input:hover::-ms-input-placeholder {
+  color: #9ba8b6;
+}
+
+input:focus::placeholder, input:hover::placeholder {
+  color: #9ba8b6;
 }
 
 .form-item__input {
