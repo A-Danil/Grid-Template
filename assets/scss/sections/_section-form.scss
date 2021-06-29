@@ -21,8 +21,17 @@
 }
 
 input {
-  &:focus {
+  &::placeholder {
+    color: $color-gray;
+  }
+
+  &:focus,
+  &:hover {
     outline: none;
+
+    &::placeholder {
+      color: lighten($color-gray, 20%);
+    }
   }
 }
 
